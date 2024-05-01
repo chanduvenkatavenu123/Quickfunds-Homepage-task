@@ -1,0 +1,107 @@
+.navMain {
+    display: flex;
+    width: 100vw;
+    font-size: 22px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px;
+    height: 80px;
+    background-color: white;
+    align-items: center;
+}
+.web-name{
+    width: 10vw;
+    padding-left: 20px;
+}
+
+.nav {
+    display: flex;
+}
+
+.navRoutes {
+    display: flex;
+    width: 90vw;
+    justify-content: space-evenly;
+    /* padding-right: 50px; */
+}
+
+.hide {
+    display: none;
+}
+
+.HIDE {
+    display: none;
+}
+
+@media screen and (min-width:320px) and (max-width:600px) {
+    .nav {
+        display: flex;
+        justify-content: flex-start;
+        gap: 5%;
+        align-items: center;
+    }
+
+    .dropdown {
+        display: flex !important;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 65vw;
+        height: 100%;
+        top: 80px;
+        left: 0;
+        background-color: azure;
+        z-index: 50;
+        position: fixed;
+        font-size: 17px;
+        padding-left: 29px;
+        transition: left 1s ease-in-out;
+        line-height: 40px;
+    }
+
+    .backDropdown {
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        width: 250px;
+        height: 100%;
+        background-color: azure;
+        transition: left 1s ease-in-out;
+    }
+
+    .hide {
+        display: flex;
+        width: 50px;
+    }
+    .comp-desc {
+        position: relative;
+        text-decoration: none;
+        font-size: 15px;
+    }
+    .comp-desc::after {
+        content: " ";
+        position: absolute;
+        background-color: #2a6877;
+        transition: width 0.3s;
+        left: 0px;
+        width: 0px;
+        height: 3px;
+        bottom: 0px;
+    }
+
+    .comp-desc:hover::after {
+        width: 20%;
+    }
+}
+
+
+
+@media screen and (min-width:768px) and (max-width:990px) {
+    .main {
+        width: 100vw;
+    }
+    .navRoutes{
+        width: 90vw;
+        font-size: 18px;
+    }
+    
+    
+
+}
